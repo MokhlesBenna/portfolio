@@ -1,5 +1,5 @@
 import React from "react";
-import person from "../../assets/images/person2.png";
+import wallpaper from "../../assets/images/wallpaper.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import SocialMedia from "../common/socialMedia/SocialMedia";
@@ -10,7 +10,7 @@ import SocialMedia from "../common/socialMedia/SocialMedia";
  * - Specific technologies and methodologies
  * - Work philosophy and approach
  * - Concrete experience areas (GenAI, CI/CD, databases)
- * - Contact information and availability
+ * - Contact information and availability 
  */
 
 const Profile = () => {
@@ -25,7 +25,7 @@ const Profile = () => {
         <div className="flex-shrink-0 max-w-[320px] w-full">
           <div className="rounded-xl overflow-hidden bg-soft-white">
             <img
-              src={person}
+              src={wallpaper}
               alt="Mokhles Benna — Software Engineer"
               className="w-full h-auto object-cover"
             />
@@ -44,7 +44,7 @@ const Profile = () => {
             id="profile-heading"
             className="text-2xl sm:text-4xl lg:text-[38px] font-semibold mb-4"
           >
-            Software Engineer
+            How?
           </h4>
 
           <div className="text-sm sm:text-base text-gray-600 leading-relaxed space-y-3">
