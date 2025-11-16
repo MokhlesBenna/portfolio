@@ -5,12 +5,12 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import SocialMedia from "../common/socialMedia/SocialMedia";
 
 /**
- * Profile / hero card updated to reflect CV content:
- * - Name & role are reflected in Introduction component (kept separate).
- * - CTA links updated to real targets (GitHub / LinkedIn / CV).
- * - English copy tailored to your backend/frontend + GenAI experience.
- *
- * CV source: Mokhles Benna, Fullstack & Java developer (See CV for details). :contentReference[oaicite:1]{index=1}
+ * Profile.jsx — Deep dive into HOW Mokhles works and his TECHNICAL APPROACH
+ * Differentiated from Introduction by focusing on:
+ * - Specific technologies and methodologies
+ * - Work philosophy and approach
+ * - Concrete experience areas (GenAI, CI/CD, databases)
+ * - Contact information and availability
  */
 
 const Profile = () => {
@@ -47,14 +47,26 @@ const Profile = () => {
             Software Engineer
           </h4>
 
-          <div className="text-sm sm:text-base text-gray-600 leading-relaxed">
+          <div className="text-sm sm:text-base text-gray-600 leading-relaxed space-y-3">
             <p>
-              Hi — I'm Mokhles. I build scalable web apps and services using Java (Spring Boot),
-              Angular for the frontend, and open-source databases. I also integrate GenAI features
-              and CI/CD pipelines to deliver production-ready solutions.
+              My approach combines <strong>modern backend architecture</strong> (Spring Boot, 
+              RESTful APIs, microservices) with <strong>dynamic frontend experiences</strong> 
+              (Angular, responsive design) to deliver full-stack solutions that scale.
+            </p>
+            
+            <p>
+              I specialize in integrating <strong>Generative AI capabilities</strong> into 
+              traditional applications, building <strong>real-time dashboards</strong> for 
+              data-driven insights, and implementing <strong>CI/CD pipelines</strong> that 
+              ensure code quality from development through production.
             </p>
 
-           
+            <p>
+              My work spans <strong>PostgreSQL, MySQL, and MongoDB</strong> for data 
+              persistence, <strong>Docker for containerization</strong>, and modern DevOps 
+              practices. I believe in writing clean, maintainable code that solves actual 
+              business problems—not just technical exercises.
+            </p>
           </div>
 
           <div className="mt-6 flex flex-wrap gap-3">
@@ -66,18 +78,15 @@ const Profile = () => {
               My Projects
             </a>
 
-            {/* Use your hosted CV or repo link; change href if you host a direct PDF file */}
-  <a
-  className="btn border px-6 py-3 text-sm flex items-center gap-2"
-  href="/Mokhles_Benna_CV.pdf"
-  download="Mokhles_Benna_CV.pdf"
-  aria-label="Download Mokhles Benna CV"
->
-  <FontAwesomeIcon icon={faDownload} />
-  Download CV
-</a>
-
-
+            <a
+              className="btn border px-6 py-3 text-sm flex items-center gap-2"
+              href="/Mokhles_Benna_CV.pdf"
+              download="Mokhles_Benna_CV.pdf"
+              aria-label="Download Mokhles Benna CV"
+            >
+              <FontAwesomeIcon icon={faDownload} />
+              Download CV
+            </a>
           </div>
 
           <ul className="mt-6 grid grid-cols-2 gap-2 text-sm text-gray-700">
@@ -97,7 +106,7 @@ const Profile = () => {
               </a>
             </li>
             <li>
-              <strong>Available:</strong> Open to internships & freelance projects
+              <strong>Available:</strong> Actively open to end-of-studies internships
             </li>
           </ul>
         </div>

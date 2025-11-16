@@ -3,13 +3,13 @@ import person from "../../assets/images/person2.png";
 import "./introduction.css";
 import InformationSummary from "./InformationSummary";
 
-/*
-  Introduction.jsx — cleaned up and defensive:
-  - No undeclared variables (no 'index' used).
-  - Accessible headings and buttons.
-  - Uses information summary data sourced from the CV/profile.
-  - Email and copy reflect CV supplied by the user.
-*/
+/**
+ * Introduction.jsx — Hero section focusing on WHO Mokhles is and his UNIQUE VALUE
+ * Differentiated from Profile by emphasizing:
+ * - Identity and passion (not technical stack)
+ * - What drives him (problem-solving, learning)
+ * - Big picture impact (not implementation details)
+ */
 
 const informationSummaryData = [
   {
@@ -43,20 +43,17 @@ const Introduction = () => {
             id="intro-heading"
             className="text-3xl xxs:text-4xl sm:text-5xl xl:text-6xl font-semibold w-full leading-tight"
           >
-            Hello, I’m
+            Hello, I'm
             <span className="block text-primary mt-1">Mokhles Benna</span>
           </h1>
 
           <p className="text-xs xxs:text-lg lg:text-[18px] my-6 text-gray-700">
-            I’m a final-year Software Engineering student and Fullstack Developer
-            (Spring Boot · Angular).
-             I build production-ready web
-            applications and POCs integrating GenAI, dashboards and cloud-native
-            practices. I focus on clean architecture, measurable performance,
-            and shipping reliable software.
+            A final-year Software Engineering student passionate about solving real-world 
+            problems through code. I transform ideas into robust, scalable applications 
+            that businesses can rely on. Whether it's building from scratch or integrating 
+            cutting-edge AI capabilities, I love the challenge of turning complexity into 
+            clarity.
           </p>
-
-          
         </div>
 
         {/* Summary stats */}
