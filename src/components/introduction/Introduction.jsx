@@ -25,7 +25,7 @@ const informationSummaryData = [
   {
     id: 3,
     title: "Certifications",
-    description: "4",
+    description: "7+",
   },
 ];
 
